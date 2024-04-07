@@ -14,5 +14,14 @@ Emby拼音首字母搜索和按拼音排序，通过修改nfo文件达到效果�
 ## 原理简介
 在nfo文件中有3个字段title、originaltitle、sorttitle，这三个字段被emby程序读取并运用在搜索和排序过程中，其中title是对外显示的标题，并参与搜索，originaltitle不对外显示，但是参与搜素，sorttitle只用于排序，不用于展示和搜索，为了实现拼音首字母搜索和排序，将把拼音首字母添加到originaltitle、sorttitle两个字段中，originaltitle字段将被修改成'$orig_title #($pinyin)'的形式，例如：我本是高山 #(wbsgs)，sorttitle将被修改为'$pinyin #($title)'，例如：wbsgs #(我本是高山)，这样就同时实现了拼音首字母搜索和排序。  
 
+## 使用效果
+### 按照拼音首字母排序
+如图，不论是电影还是电视节目，都按照拼音首字母排序，在默认排序（按照标题排序）的时候，右侧也会出现字母的快速跳转栏  
+![首字母排序](https://github.com/worace97/emby_pinyin/assets/26036823/8edd68a6-84b3-46a0-afef-ad382a97eb78)
+
+### 按照拼音首字母搜索
+搜索的时候直接输入拼音首字母就可以看到结果  
+![首字母搜索](https://github.com/worace97/emby_pinyin/assets/26036823/c8dec2e0-313d-409d-8f82-06402665775c)
+
 ## 欢迎交流~
 欢迎交流~
